@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    border-right: 170px solid rgba(7, 7, 7, 0.787);
+    border-left: 170px solid rgba(7, 7, 7, 0.787);
+}
+header{
+    display: flex;
+    justify-content: center;
+   
+    height: 630px;
+    
+}
+.container{
+    width: 1070px;
+    justify-content:space-around;
+    background-color: rgba(255, 255, 255, 0.342);
+   
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.img{
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.desc{
+    align-self: center;
+    font-weight: bold;
+    margin-top: 15px;
+    max-width: 500px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.title{
+    font: 30px normal georgia;
+    font-weight: inherit;
+    text-shadow: 1px 2px 1px rgb(131, 125, 125);
+    color: black;
+    width: auto;
+}
+.headtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: 30pt black georgia;
+    height: 70px;
+}
+article{
+    display: flex;
+    justify-content: space-around;
+  
+}
+.widget{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(136, 136, 136, 0.13);
+    border-bottom: 1px solid rgba(65, 64, 64, 0.63);
+}
+
+.img1{
+    padding: 10px;
+}
+.img2{
+    padding: 10px;
+    padding-right: 0;
+}
+.text{
+    align-self: center;
+    text-align: justify;
+    max-width: 700px;
+}
+.text1{
+    align-self: center;
+    text-align: justify;
+    max-width: 700px;
+    padding-left: 10px;
+ }
+ @media (max-width:1100px){
+   body{
+       border: none;
+   }
+    .title{
+        font-size: 25px;
+    }
+ }
+ footer{
+     display: flex;
+     justify-content: center;
+    }
+    .ftcontent{
+     display: flex;
+     justify-content: center;
+     background-color: rgba(136, 136, 136, 0.596);
+     text-align: center;
+     font: normal 9pt arial;
+     color: rgba(7, 7, 7, 0.657);
+ }
+ .know{
+     font-size: 10pt;
+     margin-left: 3px;
+     color: rgb(7, 7, 7);
+ }
+a{
+    color: rgba(97, 96, 96, 0.787);
+}
+a:hover{
+    color: rgb(49, 110, 143) ;
+}
+@media (max-width:873px){
+    .title{
+        font-size: 20px;
+    }
+    .widget{
+        width: auto;
+    }
+    .desc{
+        font-size: 12pt;
+
+    }
+}
+@media (max-width:773px){
+ 
+   .imgm,.imgn{
+       width:150px ;
+       height: 150px;
+   }
+    .title{
+        font-size: 15px;
+    }
+    .desc{
+        font-size: 10pt;
+    }
+    .widget{
+        font-size: 12px;
+    }
+}

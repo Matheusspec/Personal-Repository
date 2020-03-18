@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+        <title>Glass</title>
+        </head>
+  <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+  <link rel="stylesheet" type="text/css" href="_css/form.css"/>
+  <script language="javascript" src="_javascript/funcoes.js"></script>
+  <script>
+      function calculo(){
+          var tot1= parseInt(document.getElementById('qt').value);
+          tot=tot1*1500;
+          document.getElementById('pt').value=tot;
+      }
+  </script>
+<body>
+    <div id="interface">
+<header id="cabecalho">
+   
+ <h1>Google Glass</h1>
+<h2>A revolução do Google está chegando</h2>
+
+<img id="icone" src="_imagens/contato.png"/>
+<nav id="menu">
+<h1>Menu Principal</h1>
+<ul type="disc">
+<li onmouseover="muda('_imagens/home.png')" onmouseout="muda('_imagens/contato.png')"><a href="index.html">Home</a></li>
+<li onmouseover="muda('_imagens/especificacoes.png')" onmouseout="muda('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+<li onmouseover="muda('_imagens/fotos.png')" onmouseout="muda('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+<li onmouseover="muda('_imagens/multimidia.png')" onmouseout="muda('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+<li onmouseover="muda('_imagens/contato.png')" onmouseout="muda('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+</ul>
+</nav>
+</header>
+<section id="corpo1">
+        <article id="artigo">
+            <header id="cabecalho2">
+    <hgroup>
+    <h3>Fale Conosco > Contato</h3>
+    <h1>Formulário de Contato</h1>
+    <h2>por Gustavo Guanabara</h2>
+    <h3 class="direita">Atualizado em 23/Abril/2013</h3>
+    </hgroup>
+    </header>
+<form method="POST" id="fcontato" action="mailto:matheusteles015@gmail.com" oninput="calculo()">
+   <fieldset id="id"> 
+    <legend>Identificação do Usuário</legend>
+        <p><label for="nome">Nome:</label> <input id="nome" type="text" placeholder="Nome Completo" size="20" maxlength="40"></p>
+        <p id="p1"><label for="senha"> Senha:</label> <input id="senha" type="password" placeholder="8 digítos" size="20" maxlength="10"></p>
+        <p><label for="email">E-mail:</label><input id="email" type="email" placeholder="Seu melhor e-mail" size="20" maxlength="40"></p>
+        <fieldset id="sexo">
+            <legend>Sexo:</legend>
+            <p><input id="masc" type="radio" name="masc"><label for="masc"> Masculino</label></p>
+            <p><input id="fem" type="radio" name="masc"><label for="fem"> Feminino</label></p>
+        </fieldset>
+        <p><label for="data">Data de Nascimento: </label><input id="data" type="date"></p>
+    </fieldset>
+        <fieldset id="endereco">
+        <legend>Endereço do Usuário</legend>
+        <p>Logradouro: <input type="text" size="30" maxlength="80" placeholder="Rua, Av ..."></p>
+        <p>Número: <input type="number" size="10" maxlength="10" min="0" max="9999"></p>
+        <p><label for="cest">Estado:</label>
+            <select name="est" id="cest">
+                <optgroup label="Região Centro-Oeste">
+                    <option>Goiás</option>
+                    <option>Minas Gerais</option>
+                    <option>Mato Grosso</option>
+              </optgroup>
+              <optgroup label="Região Sul">
+                    <option>Rio Grande do Sul</option>
+              </optgroup>
+            </select>
+        </p>
+        <p><label for="ccid">Cidade:</label>
+        <input type="text" id="cid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"></p>
+        <datalist id="cidades">
+            <option value="Goiânia"></option>
+            <option value="Rio Verde"></option>
+            <option value="Cuiabá"></option>
+            <option value="Campo Grande"></option>
+            <option value="Belo Horizonte"></option>
+        </datalist>
+            </fieldset>
+    <fieldset id="mensagem"> 
+        <legend>Mensagem do Usuário</legend>
+        <p><label for="cUrg">Grau de Urgência:</label> Mín<input type="range" id="cUrg" min="0" max="10" step="2">Máx</p>
+     <p><label for="cmsg">Mensagem:</label>
+        <textarea id="cmsg" cols="47" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+    </fieldset>
+    <fieldset id="quero">
+        <legend>Quero um Google Glass</legend>
+        <p><input type="checkbox" id="qr" checked><label for="qr">Gostaria de adquirir um Google Glass quando disponível</label></p>
+        <p><label for="cor">Cor:</label><input id="cor" type="color" value="#ffffff"></p>
+        <p><label for="qt">Quantidade:</label> <input id="qt" type="number" value="0" min="0" max="5"></p>
+        <p><label for="pt">Preço Total: R$</label> <input id="pt" type="text" placeholder="Total a pagar" readonly size="10"></p>
+    </fieldset>
+    <input type="image" name="img" src="_imagens/botao-enviar.png">
+</form>
+</article>
+</secion>
+
+<footer id="pe">
+        <h5>Copyright &copy; 2013 - by Gustavo Guanabara</br>
+        Facebook | Twitter</h5>
+        </footer>
+        
+        </div>
+        </html>
