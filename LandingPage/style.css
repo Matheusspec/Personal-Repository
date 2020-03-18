@@ -9,6 +9,7 @@ body{
 .landing{
     display: flex;
     flex-direction: row;
+    height: auto;
 }
 
 .fun{
@@ -176,9 +177,32 @@ nav ul{
     .list,.bot {
         margin-left: 0;
     }
+    nav ul{
+        margin-left: 93px;
+    }
+    .list, .bot {
+        font-size: 12px;
+    }
 }
 @media(max-width: 800px){
     .fun{
         width: 60%;
+    }
+    .title{
+        font-size: 55px;
+    }
+    .desc{
+        font: normal 12px arial ;
+    }
+    .imgr{
+        width: 380px;
+        height: 380px;
+    }
+    .content{
+        padding-left: 95px;
+    }
+
+    nav ul{
+        font-size: 13px;
     }
 }
